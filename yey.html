@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>URL of a document in JavaScript Example</title>
+</head>
+<body>
+   <center>
+      <p>This button will create a new browser tab with the same content. </p>
+   </center>
+   <div id = "url"></div>
+   <script>
+      var url = document.URL;
+      document.getElementById("url").innerHTML = "URL: " + str;
+      function replicateTab(){
+         if(window.confirm("Are you sure you want to replicate ?")){
+            window.open(url);
+         }
+      }
+   </script>
+   <center>
+      <button id = "button" onclick = "replicateTab()">Click me to replicate ! </button>
+   </center>
+</body>
+</html>
